@@ -2,7 +2,7 @@
 #define TRAFFIC_LIGHT_H
 
 #define GREEN_DURATION 6
-#define YELLOW_DURATION 3
+#define YELLOW_DURATION 2
 #define RED_DURATION 6
 
 /// @brief 
@@ -10,7 +10,8 @@
 typedef enum {
     GREEN,
     YELLOW,
-    RED
+    RED,
+    FLASH_RED
 } TrafficLightState;
 
 /// @brief 

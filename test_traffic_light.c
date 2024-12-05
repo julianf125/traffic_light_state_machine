@@ -172,7 +172,11 @@ void test_flashing_red_light() {
 
 /*
 * Function to verify the routine operation of the traffic light system
-* Correct outputs must be confirmed visually
+* 
+* First displays expected output
+* Then updates light and displays state to show actual output
+*
+* Output timing correctness must be confirmed visually
 */
 void test_normal_operation() {
     printf("\n\n----- Testing routine operation (confirm output visually) -----\n");

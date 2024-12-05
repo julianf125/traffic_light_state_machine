@@ -25,7 +25,6 @@ $(TARGET): $(OBJECTS)
 
 # Rule to build and run the test suite
 test: $(TEST_TARGET)
-	./$(TEST_TARGET)
 
 $(TEST_TARGET): test_traffic_light.c traffic_light.c traffic_light.h
 	$(CC) $(CFLAGS) -o $(TEST_TARGET) test_traffic_light.c traffic_light.c

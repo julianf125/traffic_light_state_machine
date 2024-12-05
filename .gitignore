@@ -2,3 +2,4 @@ traffic_light
 test_traffic_light
 *.o
 embedded-sw-engineer-coding-challenge.pdf
+.vscode/

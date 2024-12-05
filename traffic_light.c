@@ -53,6 +53,10 @@ void update_light(TrafficLight *traffic_light) {
     }
 }
 
+/*
+* Handles the behavior of the traffic light when in FLASH_RED state
+* Toggles the red light on and off each 1 second while the light remains in FLASH_RED state
+*/
 void handle_flash_red(TrafficLight *traffic_light) {
     while (traffic_light->current_state == FLASH_RED) {  // Flash red while in FLASH_RED state
         printf("FLASH_RED: Light ON\n");  // Turn red light on
@@ -65,10 +69,10 @@ void handle_flash_red(TrafficLight *traffic_light) {
 }
 
 /*
-* Displays current state of traffic light
+* Displays state of traffic light provided traffic_light_state
 */
 void display_state(TrafficLightState traffic_light_state) {
-    const char *states[] = {"GREEN", "YELLOW", "RED", "FLASH_RED"};  // Constant character array to hold possible states
+    const char *states[] = {"GREEN", "YELLOW", "RED", "FLASH_RED"};  // Array to hold possible states
     printf("Traffic Light State: %s\n", states[traffic_light_state]);  // Print state
     fflush(stdout);  // Ensure output is displayed immediately
 }

@@ -32,5 +32,9 @@ make test
 ├── test_traffic_light.c   # Test suite
 ├── makefile               # Makefile
 └── README.md              # Documentation
-
 ```
+
+## Author
+Julian Frank
+
+julianfrank125@gmail.com
